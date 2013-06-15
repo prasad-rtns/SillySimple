@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Silly Simple </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+   <button id="silly">Do It</button>
+   <button id="clear">Clear</button>
+   <div id="results"></div>
+   <script src="js/zepto.min.js"></script>
+   <script src="js/silly.js"></script>
+   <script>
+  $('#silly').click(function(){
+		SILLY.DoIt($('#results'));
+		});
+	$('#clear').click(function(){
+		$('#results').html(' ');
+		});
+   </script>
+ </BODY>
+</HTML>
